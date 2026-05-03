@@ -14,7 +14,7 @@ services:
       - /dev/bus/usb:/dev/bus/usb   # passes all USB devices into the container
     ports:
       - "${DAEMON_PORT:-8080}:${DAEMON_PORT:-8080}"   # FM Daemon HTTP API
-      - "${ICECAST_PORT:-8000}:${ICECAST_PORT:-8000}" # Icecast stream — only needed when ICECAST_MODE=internal
+#      - "${ICECAST_PORT:-8000}:${ICECAST_PORT:-8000}" # Icecast stream — only needed when ICECAST_MODE=internal
     environment:
       # ── Icecast mode ────────────────────────────────────────────────────────
       # 'internal'  — start Icecast inside this container (default)
