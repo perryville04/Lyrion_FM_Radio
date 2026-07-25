@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # Generates image tags automatically:
-      #   push to main  → ghcr.io/<owner>/lyrion-fm-radio:latest
+      ##   push to main  → ghcr.io/<owner>/lyrion-fm-radio:latest
       #   push tag v1.04 → ghcr.io/<owner>/lyrion-fm-radio:v1.04
       #                     ghcr.io/<owner>/lyrion-fm-radio:latest
       - name: Extract image metadata
