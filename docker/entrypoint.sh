@@ -17,7 +17,7 @@ export STARTUP_FREQ DAEMON_PORT RTL_DEVICE
 
 if [ "$ICECAST_MODE" = "internal" ]; then
     # Always reach Icecast on localhost when running inside the container
-    export ICECAST_HOST=localhost
+    export ICECAST_HOST=192.168.0.82
 
     # Generate icecast.xml from template (substitutes $ICECAST_SOURCE and $ICECAST_ADMIN_PASS)
     envsubst '${ICECAST_SOURCE} ${ICECAST_ADMIN_PASS}' \
